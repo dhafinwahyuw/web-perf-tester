@@ -1,11 +1,3 @@
-import sys
-import streamlit.runtime as st_runtime
-from streamlit.web import cli as stcli
-
-if not st_runtime.exists():
-    sys.argv = ["streamlit", "run", sys.argv[0]]
-    sys.exit(stcli.main())
-
 import concurrent.futures
 import statistics
 import time
